@@ -25,11 +25,18 @@
   );
 
   /* Text-size styles */
-  --heading-title-md: 24px;
-  --heading-title-sm: 18px;
-  --heading-subtitle-md: 14px;
-  --heading-subtitle-sm: 12px;
-  --body-text-md: 16px;
-  --body-text-sm: 14px;
-  --body-text-xs: 12px;
+  --font-family: "Oxygen", sans-serif;
+  --heading-title-md: bold 24px/140% var(--font-family);
+  --heading-title-sm: bold 18px/140% var(--font-family);
+  --heading-subtitle-md: bold 14px/140% var(--font-family);
+  --heading-subtitle-sm: bold 12px/140% var(--font-family);
+  --body-text-md: regular 16px/140% var(--font-family);
+  --body-text-sm: regular 14px/140% var(--font-family);
+  --body-text-xs: regular 12px/140% var(--font-family);
+}
+
+body {
+  background-color: var(--base-gray-200);
+  color: var(--base-gray-500);
+  font: var(--body-text-md);
 }
