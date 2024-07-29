@@ -40,3 +40,20 @@ body {
   color: var(--base-gray-500);
   font: var(--body-text-md);
 }
+
+.container {
+  width: 100vw;
+  max-width: 912px;
+
+  margin: 0 auto;
+
+  padding: 32px 12px;
+
+  @media (min-width: 768px) {
+    padding: 64px 0 24px 0;
+  }
+}
+
+.white {
+  color: var(--base-white);
+}
