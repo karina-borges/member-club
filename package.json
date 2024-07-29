@@ -1,0 +1,11 @@
+{
+  "name": "members-club",
+  "description": "O projeto é um site responsivo de cartão fidelidade com o histórico de cortes de cabelo feitos por um clube de membros. Esse é um dos desafios práticos  do MBA Full-Stack, um dos conteúdos disponíveis para alunos da Rocketseat.",
+  "author": "Karina Borges",
+  "scripts": {
+    "server": "json-server --watch server.json --port 3333"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-beta.1"
+  }
+}
