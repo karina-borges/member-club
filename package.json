@@ -3,9 +3,20 @@
   "description": "O projeto é um site responsivo de cartão fidelidade com o histórico de cortes de cabelo feitos por um clube de membros. Esse é um dos desafios práticos  do MBA Full-Stack, um dos conteúdos disponíveis para alunos da Rocketseat.",
   "author": "Karina Borges",
   "scripts": {
+    "build": "webpack",
+    "dev": "webpack serve",
     "server": "json-server --watch server.json --port 3333"
   },
   "dependencies": {
     "json-server": "^1.0.0-beta.1"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
   }
 }
