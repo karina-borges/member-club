@@ -13,7 +13,7 @@
 
 .input {
   display: flex;
-  width: 400px;
+  width: 100%;
   padding: 8px 8px 8px 16px;
   align-items: center;
   gap: 12px;
@@ -24,6 +24,10 @@
 
   &:focus-within {
     border: 1.5px solid var(--main-pink);
+  }
+
+  @media (min-width: 768px) {
+    max-width: 400px;
   }
 
   input {

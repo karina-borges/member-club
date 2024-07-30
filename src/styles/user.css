@@ -21,8 +21,10 @@
 
 .user-name {
   font: var(--heading-title-sm);
+  color: var(--base-gray-600);
 }
 
 .user-subtitle {
   font: var(--body-text-sm);
+  color: var(--base-gray-500);
 }

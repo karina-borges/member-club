@@ -28,7 +28,7 @@
   --font-family: "Oxygen", sans-serif;
   --heading-title-md: bold 24px/140% var(--font-family);
   --heading-title-sm: bold 18px/140% var(--font-family);
-  --heading-subtitle-md: bold 14px/140% var(--font-family);
+  --heading-subtitle-md: uppercase bold 14px/140% var(--font-family);
   --heading-subtitle-sm: bold 12px/140% var(--font-family);
   --body-text-md: normal 16px/140% var(--font-family);
   --body-text-sm: normal 14px/140% var(--font-family);
@@ -47,7 +47,7 @@ body {
 
 .container {
   width: 100vw;
-  max-width: 912px;
+  max-width: 1000px;
 
   margin: 0 auto;
 
@@ -72,17 +72,7 @@ main {
       "record card card"
       "record progress progress";
     gap: 16px 24px;
-    height: 466px;
-  }
-}
-
-.card {
-  border-radius: 16px;
-  border: 1px solid var(--base-gray-300);
-  background: var(--base-gray-100);
-
-  @media (min-width: 768px) {
-    grid-area: card;
+    height: 100%;
   }
 }
 
