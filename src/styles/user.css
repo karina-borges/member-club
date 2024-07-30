@@ -1,0 +1,28 @@
+.user {
+  border-radius: 16px;
+  border: 1px solid var(--base-gray-300);
+  background: var(--base-gray-100);
+  width: 100%;
+
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+
+  @media (min-width: 768px) {
+    grid-area: user;
+  }
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.user-name {
+  font: var(--heading-title-sm);
+}
+
+.user-subtitle {
+  font: var(--body-text-sm);
+}

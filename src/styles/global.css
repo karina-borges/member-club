@@ -30,15 +30,19 @@
   --heading-title-sm: bold 18px/140% var(--font-family);
   --heading-subtitle-md: bold 14px/140% var(--font-family);
   --heading-subtitle-sm: bold 12px/140% var(--font-family);
-  --body-text-md: regular 16px/140% var(--font-family);
-  --body-text-sm: regular 14px/140% var(--font-family);
-  --body-text-xs: regular 12px/140% var(--font-family);
+  --body-text-md: normal 16px/140% var(--font-family);
+  --body-text-sm: normal 14px/140% var(--font-family);
+  --body-text-xs: normal 12px/140% var(--font-family);
 }
 
 body {
   background-color: var(--base-gray-200);
   color: var(--base-gray-500);
   font: var(--body-text-md);
+}
+
+.white {
+  color: var(--base-white);
 }
 
 .container {
@@ -54,6 +58,50 @@ body {
   }
 }
 
-.white {
-  color: var(--base-white);
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-areas:
+      "user card card"
+      "record card card"
+      "record card card"
+      "record progress progress";
+    gap: 16px 24px;
+    height: 466px;
+  }
+}
+
+.card {
+  border-radius: 16px;
+  border: 1px solid var(--base-gray-300);
+  background: var(--base-gray-100);
+
+  @media (min-width: 768px) {
+    grid-area: card;
+  }
+}
+
+.record {
+  border-radius: 16px;
+  border: 1px solid var(--base-gray-300);
+  background: var(--base-gray-100);
+
+  @media (min-width: 768px) {
+    grid-area: record;
+  }
+}
+
+.progress {
+  border-radius: 16px;
+  border: 1px solid var(--base-gray-300);
+  background: var(--base-gray-100);
+
+  @media (min-width: 768px) {
+    grid-area: progress;
+  }
 }
