@@ -45,6 +45,10 @@ body {
   color: var(--base-white);
 }
 
+.green {
+  color: var(--main-green);
+}
+
 .container {
   width: 100vw;
   max-width: 1000px;
@@ -73,16 +77,6 @@ main {
       "record progress progress";
     gap: 16px 24px;
     height: 100%;
-  }
-}
-
-.record {
-  border-radius: 16px;
-  border: 1px solid var(--base-gray-300);
-  background: var(--base-gray-100);
-
-  @media (min-width: 768px) {
-    grid-area: record;
   }
 }
 

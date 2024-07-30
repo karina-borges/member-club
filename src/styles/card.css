@@ -11,7 +11,7 @@
   @media (min-width: 768px) {
     grid-area: card;
     padding: 32px;
-    gap: 32px;
+    /* gap: 32px; */
   }
 }
 
@@ -80,16 +80,16 @@
   img {
     width: 30px;
     height: 30px;
-  }
 
-  @media (min-width: 475px) {
-    width: 40px;
-    height: 40px;
-  }
+    @media (min-width: 475px) {
+      width: 40px;
+      height: 40px;
+    }
 
-  @media (min-width: 768px) {
-    width: 64px;
-    height: 64px;
+    @media (min-width: 768px) {
+      width: 64px;
+      height: 64px;
+    }
   }
 }
 
