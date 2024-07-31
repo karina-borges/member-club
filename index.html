@@ -23,21 +23,20 @@
     <form class="form">
       <div class="input">
         <input type="text" placeholder="ID do cartão" id="card-id" name="card-id" />
-        <button class="submit-button">
+        <button class="submit-button" type="submit">
           <i class="ph ph-arrow-elbow-down-left white"></i>
         </button>
       </div>
     </form>
 
     <!-- Main content -->
-    <main>
+    <main id="main-content" class="hidden">
       <!-- User info -->
       <div class="user">
         <img src="src/assets/user.png" alt="User">
 
-        <div class="user-info">
-          <h1 class="user-name">Nome do usuário</h1>
-          <p class="user-subtitle">Cliente desde 18/09/2023</p>
+        <div class="user-info" id="user">
+
         </div>
       </div>
 
@@ -49,42 +48,13 @@
             <p class="card-subtitle">Ao fazer cortes de cabelo, o décimo sai de graça!</p>
           </div>
 
-          <div class="card-id">
-            <span>id: 124-537-835-230</span>
+          <div class="card-id" id="show-card-id">
+
           </div>
 
         </div>
-        <div class="card-grid">
-          <div class="grid-item">
-            <img src="src/assets/pin-check.svg" alt="Check icon">
-          </div>
-          <div class="grid-item">
-            <img src="src/assets/pin-check.svg" alt="Check icon">
-          </div>
-          <div class="grid-item">
-            <img src="src/assets/pin-check.svg" alt="Check icon">
-          </div>
-          <div class="grid-item">
-            <img src="src/assets/pin-check.svg" alt="Check icon">
-          </div>
-          <div class="grid-item">
-            <img src="src/assets/pin-check.svg" alt="Check icon">
-          </div>
-          <div class="grid-item">
-            <img src="src/assets/pin-check.svg" alt="Check icon">
-          </div>
-          <div class="grid-item">
-            <img src="src/assets/pin-check.svg" alt="Check icon">
-          </div>
-          <div class="grid-item">
-            <!-- <img src="src/assets/pin-check.svg" alt="Check icon"> -->
-          </div>
-          <div class="grid-item">
-            <!-- <img src="src/assets/pin-check.svg" alt="Check icon"> -->
-          </div>
-          <div class="grid-item">
-            <img src="src/assets/pin-gift.svg" alt="Gift icon" class="opacity">
-          </div>
+        <div class="card-grid" id="card-grid">
+
 
         </div>
       </div>
@@ -93,14 +63,14 @@
       <div class="progress">
         <div class="progress-wrapper">
           <div class="gift-title">
-            <span>3</span>
+            <span id="remaining-cuts"></span>
             <p>cortes restantes</p>
           </div>
           <div class="progress-and-label">
             <div class="progress-bar">
-              <div class="progress-bar-fill"></div>
+              <div class="progress-bar-fill" id="progress-bar-fill"></div>
             </div>
-            <span>7 de 10</span>
+            <span id="progress-label">7 de 10</span>
           </div>
         </div>
 
@@ -111,75 +81,16 @@
 
       <!-- Record -->
       <div class="record">
-        <div class="record-header">
+        <div class="record-header" id="record-header">
           <h2>Histórico</h2>
-          <p>7 cortes</p>
+
         </div>
 
         <div class="divider"></div>
 
-        <div class="record-list">
-          <div class="record-item">
-            <div class="date-time">
-              <span>18/09/2023</span>
-              <p>14:30</p>
-            </div>
+        <ul class="record-list" id="record-list">
 
-            <div class="record-check">
-              <i class="ph ph-seal-check green"></i>
-            </div>
-          </div>
-          <div class="record-item">
-            <div class="date-time">
-              <span>18/09/2023</span>
-              <p>14:30</p>
-            </div>
-
-            <div class="record-check">
-              <i class="ph ph-seal-check green"></i>
-            </div>
-          </div>
-          <div class="record-item">
-            <div class="date-time">
-              <span>18/09/2023</span>
-              <p>14:30</p>
-            </div>
-
-            <div class="record-check">
-              <i class="ph ph-seal-check green"></i>
-            </div>
-          </div>
-          <div class="record-item">
-            <div class="date-time">
-              <span>18/09/2023</span>
-              <p>14:30</p>
-            </div>
-
-            <div class="record-check">
-              <i class="ph ph-seal-check green"></i>
-            </div>
-          </div>
-          <div class="record-item">
-            <div class="date-time">
-              <span>18/09/2023</span>
-              <p>14:30</p>
-            </div>
-
-            <div class="record-check">
-              <i class="ph ph-seal-check green"></i>
-            </div>
-          </div>
-          <div class="record-item">
-            <div class="date-time">
-              <span>18/09/2023</span>
-              <p>14:30</p>
-            </div>
-
-            <div class="record-check">
-              <i class="ph ph-seal-check green"></i>
-            </div>
-          </div>
-        </div>
+        </ul>
 
       </div>
 

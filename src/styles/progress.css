@@ -79,7 +79,6 @@
 .progress-bar-fill {
   position: absolute;
   left: 0;
-  width: 66.67%;
 
   background: var(--gradient-base);
   border-radius: 9999px;
